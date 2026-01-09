@@ -65,7 +65,7 @@ nav{
     align-items: center;
     justify-content: center; 
 
-    background-image: url(/image/banner.png);
+    background-image: url(image/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -543,3 +543,4 @@ i {
     }
 
 }
+
