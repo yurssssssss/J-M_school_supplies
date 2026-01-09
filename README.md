@@ -1,1 +1,1 @@
-# J-M_school_supplies.github.io
+# J-M_school_supplies
