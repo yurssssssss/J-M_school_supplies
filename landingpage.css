@@ -65,7 +65,7 @@ nav{
     align-items: center;
     justify-content: center; 
 
-    background-image: url(/image/banner.png);
+    background-image: url(image/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -150,10 +150,10 @@ nav{
       transform: scale(1);
     }
 
-    .btn-1::before { background-image: url('/image/pexels-olia-danilevich-5088008.jpg'); }
-    .btn-2::before { background-image: url('/image/pexels-punttim-53874.jpg'); }
-    .btn-3::before { background-image: url('/image/pexels-frans-van-heerden-201846-632470.jpg'); }
-    .btn-4::before { background-image: url('/image/tech.jpg'); }
+    .btn-1::before { background-image: url('image/pexels-olia-danilevich-5088008.jpg'); }
+    .btn-2::before { background-image: url('image/pexels-punttim-53874.jpg'); }
+    .btn-3::before { background-image: url('image/pexels-frans-van-heerden-201846-632470.jpg'); }
+    .btn-4::before { background-image: url('image/tech.jpg'); }
 
  
     .btn-custom:hover::before,
@@ -584,3 +584,4 @@ i {
         font-size: 1rem;
     }
 }
+
