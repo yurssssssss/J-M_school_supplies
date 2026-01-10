@@ -65,7 +65,7 @@ nav{
     align-items: center;
     justify-content: center; 
 
-    background-image: url('image/banner.png');
+    background-image: url(/image/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -150,10 +150,10 @@ nav{
       transform: scale(1);
     }
 
-    .btn-1::before { background-image: url('image/pexels-olia-danilevich-5088008.jpg'); }
-    .btn-2::before { background-image: url('image/pexels-punttim-53874.jpg'); }
-    .btn-3::before { background-image: url('image/pexels-frans-van-heerden-201846-632470.jpg'); }
-    .btn-4::before { background-image: url('image/tech.jpg'); }
+    .btn-1::before { background-image: url('/image/pexels-olia-danilevich-5088008.jpg'); }
+    .btn-2::before { background-image: url('/image/pexels-punttim-53874.jpg'); }
+    .btn-3::before { background-image: url('/image/pexels-frans-van-heerden-201846-632470.jpg'); }
+    .btn-4::before { background-image: url('/image/tech.jpg'); }
 
  
     .btn-custom:hover::before,
@@ -238,7 +238,47 @@ nav{
     .card-price {
         font-size: 1.15rem;
     }
+    .out-of-stock-card img {
+
+    opacity: 0.4; 
+    filter: grayscale(80%); 
+}
+.out-of-stock-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     
+
+    background-color: rgba(0, 0, 0, 0.4); 
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+    z-index: 5; 
+    pointer-events: none; 
+}
+.out-of-stock-overlay span {
+    color: white;
+    font-size: 1.8rem; 
+    font-weight: 700;
+    padding: 8px 15px;
+    border: 3px solid white;
+    border-radius: 5px;
+    
+
+    transform: rotate(-12deg); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.out-of-stock-card .badge.bg-danger {
+    background-color: #dc3545 !important; 
+    font-weight: bold;
+}
     
     .product-badge {
         position: absolute;
@@ -272,6 +312,8 @@ nav{
     .row {
       justify-content: center;
     }
+
+
 
 /* --- NEW ABOUT US SECTION STYLES --- */
 
@@ -541,7 +583,4 @@ i {
     .about-panel p, .highlighted-panel li {
         font-size: 1rem;
     }
-
 }
-
-
