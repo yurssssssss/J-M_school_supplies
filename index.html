@@ -1,3 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="landingpage.css">
+    <title>J&M School Supplies Catalog</title>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">J&M</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#about-us-section">About</a> <a class="nav-link" href="#">Contact Us</a>
+        <a class="nav-link" href="#">Store</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content text-center text-white">
+    <h1 class="display-4">J&M School Supplies</h1>
+    <p class="lead">Check Live Store Inventory & Discover New Arrivals.</p>
+    <a href="#about-us-section" class="btn btn-primary">Learn How It Works</a>
+  </div>
+</header>
+<section class="about-us-section" id="about-us-section">
+    <div class="container">
+        <h2 class="text-center mb-5 display-5 fw-bold">About J&M School Supplies</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="about-panel">
+                    <h3>Our Mission: Smart Shopping Starts Here</h3>
+                    <p>Welcome to the official digital catalog of **J&M School Supplies**, your trusted local provider for quality school and office essentials right here in Carmona, Cavite.</p>
+                    <p>We know that a busy student or parent's time is precious. We created this website to offer a convenient solution: you can now check the products and inventory of our physical store before you even step out the door.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8">
+                <div class="about-panel highlighted-panel">
+                    <h3 class="text-danger">🔎 How Our Catalog Works (Please Read)</h3>
+                    <p class="lead fw-bold">This is a Digital Inventory Checker, Not an Online Store.</p>
+                    <ul>
+                        <li>**Check Availability:** Use this site to verify if a product is <span class="fw-bold text-success">In Stock</span>, <span class="fw-bold text-warning">Low Stock</span>, or <span class="fw-bold text-danger">Out of Stock</span> at our store. This saves you a trip!</li>
+                        <li>**Discover New Items:** Easily see the latest school supplies and essentials we've added to our shelves.</li>
+                        <li>**In-Store Purchase Only:** All transactions, including item selection, payment, and pickup, must be completed at our physical location. We do not currently process online orders, shipping, or item reservations through this website.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 text-center">
+                <h3 class="mt-4">📍 Visit J&M School Supplies</h3>
+                <p>We take pride in serving our community with a comprehensive and affordable range of supplies for students of all levels.</p>
+                <p class="fw-bold text-primary">We look forward to welcoming you to our store!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-6 mb-3 d-flex justify-content-center">
+                <button class="btn btn-custom w-100 btn-1" data-modal-target="basicSuppliesModal">Basic Supplies</button>
+            </div>
+            <div class="col-6 col-md-6 mb-3 d-flex justify-content-center" id="art">
+                <button class="btn btn-custom w-100 btn-2" data-modal-target="artSuppliesModal">Art Supplies</button>
+            </div>
+            <div class="col-6 col-md-6 mb-3 d-flex justify-content-center" id="org">
+                <button class="btn btn-custom w-100 btn-3" data-modal-target="orgSuppliesModal">Organization Supplies</button>
+            </div>
+            <div class="col-6 col-md-6 mb-3 d-flex justify-content-center" id="tech">
+                <button class="btn btn-custom w-100 btn-4" data-modal-target="techSuppliesModal">Tech Supplies</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="modal-container" id="basicSuppliesModal">
+    <div class="modal-content-custom">
+        <button class="close-btn" data-close-modal="basicSuppliesModal">×</button>
+        <h2 class="text-center mb-4">Basic Supplies</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="basicSuppliesList">
+            <div class="col">
+                <div class="card h-100 product-card">
+                    <span class="product-badge top-sale-badge">TOP SALE</span>
+                    <img src="image/pencil set.jpg" class="card-img-top" alt="Pencils Pack">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Pencil Set (12pcs)</h5>
+                        <p class="card-text">High-quality graphite pencils for drawing and writing.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <p class="card-price fw-bold text-danger mb-0">$5.99</p>
+                            <span class="badge bg-secondary">Stock: 150</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 product-card">
+                    <span class="product-badge new-badge">NEW</span>
+                    <img src="image/eco notebook.jpg" class="card-img-top" alt="Notebook">
+                    <div class="card-body">
+                        <h5 class="card-title">Eco-Friendly Notebook (A5)</h5>
+                        <p class="card-text">100 sheets of recycled, smooth paper.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <p class="card-price fw-bold text-success mb-0">$3.50</p>
+                            <span class="badge bg-secondary">Stock: 220</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 product-card">
+                    <span class="product-badge top-sale-badge">TOP SALE</span>
+                    <img src="image/yellow pad.webp" class="card-img-top" alt="Pencils Pack">
+                    <div class="card-body">
+                        <h5 class="card-title">Yellow Pad (100 Sheets)</h5>
+                        <p class="card-text">High-quality yellow paper pads for writing and sketching.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <p class="card-price fw-bold text-danger mb-0">$1.00</p>
+                            <span class="badge bg-secondary">Stock: 100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-container" id="artSuppliesModal">
+    <div class="modal-content-custom">
+        <button class="close-btn" data-close-modal="artSuppliesModal">×</button>
+        <h2 class="text-center mb-4">Art Supplies</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card h-100 product-card">
+                    <span class="product-badge top-sale-badge">TOP SALE</span>
+                    <img src="image/watercolor.webp" class="card-img-top" alt="Paint Set">
+                    <div class="card-body">
+                        <h5 class="card-title">Watercolor Paint Set (24 Colors)</h5>
+                        <p class="card-text">Vibrant, non-toxic watercolor set perfect for beginners and school projects.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <p class="card-price fw-bold text-danger mb-0">$9.99</p>
+                            <span class="badge bg-secondary">Stock: 85</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 product-card">
+                    <span class="product-badge new-badge">NEW</span>
+                    <img src="image/sketchpad.jpg" class="card-img-top" alt="Sketchbook">
+                    <div class="card-body">
+                        <h5 class="card-title">Professional Sketchbook (A4)</h5>
+                        <p class="card-text">Thick, acid-free paper suitable for pencils, charcoal, and markers.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <p class="card-price fw-bold text-success mb-0">$7.50</p>
+                            <span class="badge bg-secondary">Stock: 140</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="col">
+                <div class="card h-100 product-card out-of-stock-card">
+                    <span class="product-badge top-sale-badge">TOP SALE</span>
+                    <img src="image/tab divider.jpg" class="card-img-top" alt="Dividers">
+                    <div class="out-of-stock-overlay">
+                        <span>SOLD OUT</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Graphite Pencil</h5>
+                        <p class="card-text">Sturdy and smooth graphite pencils for precise drawing and writing.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <p class="card-price fw-bold text-danger mb-0">$2.10</p>
+                            <span class="badge bg-danger">OUT OF STOCK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 product-card">
+                    <span class="product-badge top-sale-badge">TOP SALE</span>
+                    <img src="image/acrylic paint.jpg" class="card-img-top" alt="Paint Set">
+                    <div class="card-body">
+                        <h5 class="card-title">Acrylic Paint Set (12 Colors)</h5>
+                        <p class="card-text">Vibrant, non-toxic acrylic paint set perfect for beginners and school projects.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <p class="card-price fw-bold text-danger mb-0">$9.99</p>
+                            <span class="badge bg-secondary">Stock: 85</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 product-card">
+                    <span class="product-badge top-sale-badge">TOP SALE</span>
+                    <img src="image/paintbrush.webp" class="card-img-top" alt="Paint Set">
+                    <div class="card-body">
+                        <h5 class="card-title">Paint Brush </h5>
+                        <p class="card-text">Paint brush set with various sizes for detailed work.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <p class="card-price fw-bold text-danger mb-0">$9.99</p>
+                            <span class="badge bg-secondary">Stock: 85</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal-container" id="orgSuppliesModal">
     <div class="modal-content-custom">
         <h2 class="text-center mb-4">Organization Supplies</h2>
@@ -81,3 +306,159 @@
         </div>
     </div>
 </div>
+
+<div class="modal-container" id="techSuppliesModal">
+    <div class="modal-content-custom">
+        <button class="close-btn" data-close-modal="techSuppliesModal">×</button>
+        <h2 class="text-center mb-4">Tech Supplies</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card h-100 product-card">
+                    <span class="product-badge new-badge">NEW</span>
+                    <img src="image/usb.jpg" class="card-img-top" alt="USB Drive">
+                    <div class="card-body">
+                        <h5 class="card-title">16GB USB Flash Drive</h5>
+                        <p class="card-text">Reliable, compact storage for projects and assignments.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <p class="card-price fw-bold text-success mb-0">$6.99</p>
+                            <span class="badge bg-secondary">Stock: 90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 product-card">
+                    <img src="image/stylus pen.jpg" class="card-img-top" alt="Stylus Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Universal Stylus Pen</h5>
+                        <p class="card-text">Precision tip for touchscreen devices, great for digital note-taking.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <p class="card-price fw-bold text-primary mb-0">$3.99</p>
+                            <span class="badge bg-secondary">Stock: 160</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 product-card">
+                    <span class="product-badge new-badge">NEW</span>
+                    <img src="image/usb hub.jpg" class="card-img-top" alt="USB Drive">
+                    <div class="card-body">
+                        <h5 class="card-title">USB Hub</h5>
+                        <p class="card-text">Expand your device's USB ports with this reliable hub.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <p class="card-price fw-bold text-success mb-0">$6.99</p>
+                            <span class="badge bg-secondary">Stock: 90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 product-card">
+                    <span class="product-badge new-badge">NEW</span>
+                    <img src="image/type C.webp" class="card-img-top" alt="USB Drive">
+                    <div class="card-body">
+                        <h5 class="card-title">Type C Cable</h5>
+                        <p class="card-text">Fast charging cable for Type C devices and fast transfer of data.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <p class="card-price fw-bold text-success mb-0">$6.99</p>
+                            <span class="badge bg-secondary">Stock: 90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 product-card">
+                    <span class="product-badge new-badge">NEW</span>
+                    <img src="image/power bank.webp" class="card-img-top" alt="USB Drive">
+                    <div class="card-body">
+                        <h5 class="card-title">Power Bank</h5>
+                        <p class="card-text">High capacity power bank for charging devices on the go.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <p class="card-price fw-bold text-success mb-0">$6.99</p>
+                            <span class="badge bg-secondary">Stock: 90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="loc">
+    <div class="panel" id="rateProductForm">
+        <h2>Rate Our Product!</h2>
+        <form>
+            <select class="select-box category-select-class" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="school">Basic Supplies</option>
+                <option value="office">Office Supplies</option>
+                <option value="art">Art Materials</option>
+                <option value="tech">Tech Materials</option>
+            </select>
+
+            <select class="select-box supplies-select-class" required>
+                <option value="" disabled selected>Select Supplies</option>
+            </select>
+
+            <div class="star-container">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+
+                <button class="submit-btn" type="button" id="rateSubmit">Submit</button>
+            </div>
+        </form>
+
+        <div id="popup">✔ Your rating has been sent!</div>
+
+        <h2>Looking for Us?</h2>
+        <div class="map-box">
+           <iframe src="https://www.google.com/maps/embed?pb=!4v1767788438142!6m8!1m7!1sPh50_KOiexrbYrMIwY6mWg!2m2!1d14.31735628247604!2d121.0613655949917!3f284.3087963183631!4f-19.614102211440226!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="panel" id="feedbackForm">
+        <h2>Give us your Feedback!</h2>
+
+        <form>
+            <select class="select-box category-select-class" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="school">Basic Supplies</option>
+                <option value="office">Office Supplies</option>
+                <option value="art">Art Materials</option>
+                <option value="tech">Tech Materials</option>
+            </select>
+
+            <select class="select-box supplies-select-class" required>
+                <option value="" disabled selected>Select Supplies</option>
+            </select>
+
+            <textarea id="feedbackTextarea" placeholder="Your Feedback:"></textarea>
+
+            <button class="submit-btn" type="button" id="feedbackSubmit">Submit</button>
+        </form>
+        
+        <div id="popup2">✔ Feedback Sent Successfully!</div>
+    </div>
+</section>
+
+
+<footer class="footers">
+    <div class="container text-center">
+        <p>© 2024 J&M School Supplies. All rights reserved.</p>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-tiktok"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter-x"></i>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script src="JSCRIPT.js"></script>
+</body>
+
+</html>
